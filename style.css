@@ -1,0 +1,82 @@
+:root {
+  --color-gray: #888888;
+  --color-light: #fff;
+  --color-blue: #0078ff;
+  --color-emphasis: #ff4081;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  font-size: 4rem;
+  color: var(--color-gray);
+}
+
+main {
+  max-width: 1024px;
+  margin: auto;
+}
+
+main .error-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  color: var(--color-blue);
+  font-size: 2rem;
+}
+
+.error-card img {
+  width: 300px;
+  padding: 20px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-bottom: 20px;
+}
+
+.error-card p {
+  text-align: center;
+}
+
+.error-card .cta {
+  display: block;
+  text-decoration: none;
+  background-image: linear-gradient(
+    45deg,
+    var(--color-gray),
+    var(--color-emphasis)
+  );
+  color: var(--color-light);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
